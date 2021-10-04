@@ -6,17 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js",
-    "build": "webpack --config prod.config.js"
+    "build": "webpack"
   },
   "author": "Jacob",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-es2016": "^6.24.1",
     "express": "^4.17.1",
     "nodemon": "^2.0.13",
     "path": "^0.12.7",
     "react": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
     "webpack": "^5.55.1",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.3.0"

@@ -5,11 +5,11 @@ const path = require('path')
 
 
 
-app.use(express.static(path.join(__dirname , '../client/index.js')));
+app.use(express.static(path.join(__dirname , '../dist')));
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public/index.html'))
-})
+app.get('/', function(req, res) {
+  console.log(path.join(__dirname , '../client/dist'))
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
